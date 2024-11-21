@@ -1,0 +1,48 @@
+.three-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    padding: 2vw;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    margin-bottom: 13rem;
+}
+
+.three1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: black;
+    border: 2px solid #E0FD48;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.three2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: black;
+    border: 2px solid #E0FD48;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.three3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: black;
+    border: 2px solid #E0FD48;
+    border-radius: 20px;
+    overflow: hidden;
+}

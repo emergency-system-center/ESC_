@@ -1,0 +1,175 @@
+/* 수정 응급구조사 블러 호버 */
+
+.paramedic1-2,
+.paramedic1-3,
+.paramedic1-4,
+.paramedic1-5,
+.paramedic1-6,
+.paramedic2-1,
+.paramedic2-2,
+.paramedic2-3,
+.paramedic2-4 {
+    transition: filter 0.3s ease;
+}
+
+.blurredper {
+    filter: blur(.7rem);
+    /* transform: scale(0.95); */
+}
+
+
+.paramedic1-2 video,
+.paramedic1-5 video,
+.paramedic1-3 video,
+.paramedic1-4 img,
+.paramedic2-1 img,
+.paramedic2-2 video,
+.paramedic2-3 img {
+    max-width: 100%;
+    transition: transform 0.3s linear;
+}
+
+.paramedic1-2:hover video,
+.paramedic1-5:hover video,
+.paramedic2-1:hover img,
+.paramedic2-2:hover video,
+.paramedic2-3:hover img {
+    transform: scale(1.1);
+}
+
+.paramedic1-3:hover video,
+.paramedic1-6:hover {
+    transform: scale(1);
+}
+
+/* 수정 응급구조사 블러 호버끝 */
+
+
+/* hospital 블러 처리 */
+.hospital1-2,
+.hospital1-3,
+.hospital2-1,
+.hospital2-2 {
+    transition: filter 0.3s ease;
+}
+
+.blurredhosp {
+    filter: blur(.5rem);
+    /* transform: scale(0.95); 약간 축소 */
+}
+
+.hospital1-2 video,
+.hospital1-3 img,
+.hospital2-1 video,
+.hospital2-2 img {
+    max-width: 100%;
+    transition: transform .3s linear;
+}
+
+.hospital1-2:hover video,
+.hospital1-3:hover img,
+.hospital2-1:hover video,
+.hospital2-2:hover img {
+    transform: scale(1.1);
+}
+
+/* 블러 처리 끝 */
+
+
+/* 시민 블러 처리 */
+.citizen1-3,
+.citizen1-4,
+.citizen1-2 {
+    transition: filter .3s ease;
+}
+
+.blurredcitizen {
+    filter: blur(.5rem);
+    transform: scale(0.95);
+}
+
+.citizen1-3 img,
+.citizen1-4 img,
+.citizen1-2 video {
+    max-width: 100%;
+    transition: transform .3s linear;
+}
+
+.citizen1-3:hover img,
+.citizen1-4:hover img {
+    transform: scale(1.1);
+}
+
+.citizen1-2:hover video {
+    transform: scale(1.05);
+}
+
+/* 시민 끝 */
+
+
+/* 네비 블러 */
+.device1 img,
+.device2 video,
+.device3 img,
+.device4 img {
+    transition: filter .3s ease;
+}
+
+.blurreddev {
+    filter: blur(.5rem);
+    transform: scale(0.95);
+}
+
+.device1 img,
+.device2 video,
+.device3 img,
+.device4 img {
+    max-width: 100%;
+    transition: transform .3s linear;
+}
+
+.device1:hover img,
+.device3:hover img {
+    transform: scale(1.1);
+}
+
+.device2:hover video,
+.device4:hover img {
+    transform: scale(1);
+}
+
+/* 네비 블러 끝*/
+
+
+/* 텍스트 애니메이션 */
+
+.paramedic1-4 {
+    position: relative;
+    overflow: hidden;
+}
+
+.perP1 {
+    white-space: nowrap;
+    transform: translateX(0%);
+    /* 처음부터 제자리에 위치 */
+    transition: transform 0.5s ease;
+}
+
+/* 호버 시 잠깐 왼쪽으로 이동했다가 돌아오는 애니메이션 */
+.paramedic1-4:hover .perP1 {
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-150%);
+    }
+
+    50% {
+        transform: translateX(-90%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}

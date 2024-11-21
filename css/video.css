@@ -1,0 +1,39 @@
+#videoF-container {
+    width: 100%; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+    border-radius: 20px;
+    margin-bottom: 63rem;
+}
+
+#videoF {
+    width: 100%; 
+    height: auto; 
+    border-radius: 20px;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+}
+
+#playMessage {
+    color: #000;
+    font-size: 1rem;
+    background: #E0FD48;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    pointer-events: none;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}

@@ -1,0 +1,895 @@
+.serviceS {
+    margin-bottom: 6rem;
+}
+
+.paramedic0 {
+    display: flex;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 13rem;
+}
+
+.paramedic1,
+.paramedic2 {
+    flex-basis: 50%;
+    display: grid;
+}
+
+.paramedic1 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 2vw;
+    border-radius: 20px;
+    margin-right: 1vw;
+}
+
+.paramedic2 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2vw;
+    border-radius: 20px;
+    margin-left: 1vw;
+}
+
+.paramedic1-1 {
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+}
+
+.paramedic1-2 {
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: #E0FD48;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.paramedic1-2 video {
+    width: 70%;
+}
+
+.paramedic1-3 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: black;
+    border: solid 2px #E0FD48;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.paramedic1-3 video {
+    width: 100%;
+    margin-top: 0.5rem;
+    background-color: #0000;
+}
+
+.paramedic1-4 {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.paramedic1-5 {
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: black;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paramedic1-5 video {
+    width: 80%;
+}
+
+.paramedic1-6 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #E0FD48;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.parColor0 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+.parKey {
+    display: flex;
+    padding: 0.5rem 1rem;
+    background-color: #1e1e1e;
+    color: #E0FD48;
+    border-radius: 20px;
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
+.parMiddle {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.parTxt {
+    font-size: 1.05rem;
+}
+
+
+.paramedic2-1 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.paramedic2-1 img {
+    width: 90%;
+}
+
+.paramedic2-2 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #212121;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paramedic2-2 video {
+    width: 70%;
+}
+
+.paramedic2-3 {
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paramedic2-3 p {
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+}
+
+.paramedic2-3 img {
+    width: 80%;
+}
+
+.par4 {
+    margin-left: 4rem;
+}
+
+.circleP {
+    background-color: #E0FD48;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+
+}
+
+.par4-1,
+.par4-2 {
+    margin-bottom: 2rem;
+}
+
+.paramedic0-1Txt {
+    margin-bottom: 3rem;
+}
+
+.paramedic0-1 .parCheck div {
+    opacity: 0;
+    transform: translateX(-50rem);
+    transition: opacity .7s ease-out, transform .7s ease-out;
+}
+
+.paramedic0-1 .parCheck div.visible {
+    opacity: 1;
+    transform: translateX(0rem);
+}
+
+.parCheck {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2vw;
+    border-radius: 20px;
+    margin-bottom: 13rem;
+    position: relative;
+    overflow: visible;
+}
+
+.parCheck::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: -10%;
+    right: 0%;
+    bottom: -50%;
+    background-image: url('../img/parBg.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 50%;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.parCheck img {
+    width: 100%;
+}
+
+.parCheck1 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #1e1e1e;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.parCheck2 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #1e1e1e;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.parCheck3 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #1e1e1e;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parCheck4 {
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+}
+
+.parCheck5 {
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+}
+
+.parCheck6 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #1e1e1e;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parCheck7 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #1e1e1e;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parCheck8 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #1e1e1e;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parCheck9 {
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+}
+
+.parCheck10 {
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+}
+
+.parCheck11 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #1e1e1e;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parCheck12 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #1e1e1e;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paramedic0-2Txt {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24rem;
+
+}
+
+.paramedic0-2Txt p {
+    margin-bottom: 3rem;
+    align-self: flex-start;
+}
+
+.paramedic0-2Txt video {
+    width: 120%;
+
+}
+
+.paramedic0-3 {
+    margin-bottom: 13rem;
+}
+
+.hospital {
+    display: flex;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 13rem;
+}
+
+.hospital1,
+.hospital2 {
+    flex-basis: 50%;
+    display: grid;
+}
+
+.hospital1 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 2vw;
+    border-radius: 20px;
+    margin-right: 1vw;
+}
+
+.hospital2 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2vw;
+    border-radius: 20px;
+    margin-left: 1vw;
+}
+
+.hospital1-1 {
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+    position: relative;
+    overflow: visible;
+
+}
+
+.hospital1-1::before {
+    content: '';
+    position: absolute;
+    top: -300%;
+    left: 0%;
+    right: -20%;
+    bottom: -300%;
+    background-image: url('../img/hosBg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.hospital1-2 {
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: #212121;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.hospital1-2 video {
+    width: 65%;
+    margin: 0;
+    padding: 0;
+}
+
+.hospital1-3 img {
+    width: 70%;
+}
+
+.hospital1-3 {
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: left;
+}
+
+.hospital1-3 p {
+    align-self: flex-start;
+    margin-left: 6rem;
+}
+
+.hospital1-3 .service-sub2 {
+    margin-bottom: 1rem;
+}
+
+.hospital1-3 .service-sub {
+    margin-bottom: 3rem;
+}
+
+.hospital2-1 {
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: #212121;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+.hospital2-1 video {
+    width: 80%;
+}
+
+.hospital2-2 {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: #ff3e3e;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.hosColor0 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.hosKey {
+    display: flex;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: #ff3e3e;
+    border-radius: 20px;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.hosMiddle {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.hosTxt {
+    font-size: 1.05rem;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hospital3 .hos3 img {
+    opacity: 0;
+    transform: translateZ(-9.7rem);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.hospital3 .hos3 img.visible {
+    opacity: 1;
+    transform: translateZ(0rem);
+}
+
+.hospital3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+    border-radius: 20px;
+    margin-bottom: 13rem;
+}
+
+.hos3 {
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hos3 img {
+    width: 120%;
+}
+
+.hos3Txt {
+    margin-bottom: 3rem;
+}
+
+.hospital4 {
+    margin-bottom: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hospital4 p {
+    align-self: flex-start;
+    margin-bottom: 3rem;
+}
+
+.hospital4 video {
+    width: 60%;
+}
+
+.hospital4 .service-main {
+    margin-bottom: 2rem;
+}
+
+.hos4C {
+    width: 100%;
+    background-color: #0e0e0e;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service00 {
+    margin-bottom: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service00 p {
+    align-self: flex-start;
+    margin-bottom: 3rem;
+}
+
+.service00 video {
+    width: 105%;
+    background-color: #0e0e0e;
+    border-radius: 50px;
+}
+
+.service00 .service-main {
+    margin-bottom: 2rem;
+}
+
+.serviceV {
+    width: 100%;
+    background-color: #0e0e0e;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.citizen {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2vw;
+    border-radius: 20px;
+    margin-bottom: 13rem;
+}
+
+.citizen1-1 {
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+}
+
+
+.citizen1-2 {
+    grid-column: span 1;
+    grid-row: span 4;
+    border-radius: 20px;
+    padding: 2rem 0;
+    background-color: #212121;
+    display: flex;
+    position: relative;
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+    background-position: left;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.citizen1-3 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.citizen1-3 img {
+    width: 70%;
+}
+
+.citizen1-4 {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.citizen1-4 img {
+    width: 70%;
+}
+
+.citizen3 {
+    margin-bottom: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.citizen3 p {
+    margin-bottom: 3rem;
+    align-self: flex-start;
+}
+
+.citizen3 video {
+    width: 80%;
+    background-color: #0e0e0e;
+    border-radius: 50px;
+}
+
+.citizen3C {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e0e0e;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.citizen4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2vw;
+    border-radius: 20px;
+    margin-bottom: 13rem;
+}
+
+.citizen4-1 {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.citizen4-1 img {
+    width: 90%;
+}
+
+.citizen4-2 {
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.citizen4-3 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #0177FF;
+    aspect-ratio: 3/1;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.cityColor0 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.cityKey {
+    display: flex;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: #0177FF;
+    border-radius: 20px;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.cityMiddle {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.cityTxt {
+    font-size: 1.05rem;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+.citizen4Txt .service-main {
+    margin-bottom: 3rem;
+}
+
+.citizen4-1 .service-sub2 {
+    margin-bottom: 3rem;
+}
+
+.city4-1div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    background-color: #101010;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.city4-1div:hover {
+    background-color: #0177FF;
+}
+
+.city4-1div1 {
+    margin-bottom: 3rem;
+}
+
+.city4-2div {
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: #101010;
+    border-radius: 20px;
+    width: 90%;
+    height: 4.5rem;
+    align-self: center;
+}
+
+.circle4-2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #0177FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    font-size: 1.12rem;
+    margin-right: 2rem;
+    margin-left: 3rem;
+}
+
+.city4-2div:hover {
+    background-color: #0177FF;
+
+    & .circle4-2 {
+        background-color: #101010;
+    }
+}
