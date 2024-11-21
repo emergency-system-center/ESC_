@@ -1,0 +1,626 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css');
+@import url('https://fonts.cdnfonts.com/css/conthrax');
+
+
+/*--BODY / CONTAINER--*/
+* {
+    cursor: url('../img/cursor.svg'), auto !important;
+}
+
+
+body {
+    font-family: 'pretendard', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+    font-size: 16px;
+    overflow-x: hidden;
+    cursor: url('../img/cursor.svg'), auto;
+}
+
+.container {
+    width: 73%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.divScroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.divScroll.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/*--SCROLL BAR--*/
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E0FD48;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+::-webkit-scrollbar:horizontal {
+    width: 0;
+    height: 0;
+}
+
+/*--HEADER--*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.5vh;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 73%;
+    gap: 20px;
+    transition: top 0.2s ease-in-out;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(105, 105, 105, 0.5);
+    /* 배경 색상 설정 */
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    gap: 1rem;
+    /* 메뉴 항목 간의 간격 추가 */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E0FD48;
+    display: block;
+    padding: 0.5rem 1.5rem;
+}
+
+nav ul li a:hover {
+    color: #000000;
+    background-color: #E0FD48;
+    border-radius: 10px;
+}
+
+/*--FOOTER--*/
+
+footer {
+    background-color: #E0FD48;
+    color: black;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    position: relative;
+    z-index: 1;
+}
+
+
+.prof:hover {
+    filter: invert(1);
+}
+
+
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-size: 0.95rem;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.footerLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerLogo a {
+    text-decoration: none;
+    color: white;
+}
+
+.logoF img {
+    width: 15%;
+}
+
+.profileAll {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile1 {
+    display: flex;
+    margin: 0 auto;
+}
+
+.profileAll img {
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+.profile {
+    text-align: center;
+    margin-left: 2rem;
+}
+
+.name {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.portfolio {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.portfolio a {
+    text-decoration: none;
+    color: white;
+}
+
+.white {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+}
+
+.black {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: black;
+}
+
+
+/*--TITLE/SUB TEXT--*/
+
+
+.con1 {
+    font-family: Conthrax, 'sans-serif';
+    font-size: 3rem;
+    color: #E0FD48;
+    margin: 0;
+    padding: 0;
+}
+
+.con1-1 {
+    font-family: Conthrax, 'sans-serif';
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.pre1 {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-top: 3rem;
+    color: #ffffff;
+}
+
+
+.con2 {
+    font-family: Conthrax, 'sans-serif';
+    font-size: 6rem;
+    color: #E0FD48;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.con3 {
+    font-family: Conthrax, 'sans-serif';
+    font-size: 3rem;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.pre2 {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 1.7rem;
+}
+
+.pre3 {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1rem;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.con4 {
+    font-family: Conthrax, 'sans-serif';
+    font-size: 2.2rem;
+    color: #000000;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.con5 {
+    font-family: Conthrax, 'sans-serif';
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+
+}
+
+.pre5 {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1rem;
+    color: #ffffff;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.pre6 {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.pre7 {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.5rem;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.pre7-1 {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.pre7-2 {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.pre7-3 {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.con6 {
+    font-family: Conthrax, 'sans-serif';
+    font-size: 2rem;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.con7 {
+    font-family: Conthrax, 'sans-serif';
+    font-size: 2rem;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: -0.2rem;
+    margin-bottom: 2rem;
+}
+
+
+/*--FOOTER--*/
+
+
+.con8 {
+    font-family: Conthrax, 'sans-serif';
+    font-size: 4rem;
+    color: #000000;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footerLogo a {
+    color: #000000;
+}
+
+.con9 {
+    font-family: Conthrax, 'sans-serif';
+    font-size: 1.1rem;
+    color: #E0FD48;
+    margin-left: 4.8rem;
+    margin-bottom: 3rem;
+    margin-top: 0;
+}
+
+.pre8 {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    color: #000000;
+}
+
+.mainTxt {
+    font-family: Conthrax, 'sans-serif';
+    font-size: 5.5rem;
+    color: #000000;
+    margin-top: 0;
+    line-height: 6.2rem;
+    margin-bottom: 0;
+}
+
+.hk {
+    font-family: Conthrax, 'sans-serif';
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0.5rem 0;
+}
+
+.hkC {
+    font-family: Conthrax, 'sans-serif';
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.top {
+    font-size: 1rem;
+}
+
+.main-sub {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000000;
+}
+
+.VisionPre {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #E0FD48;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    line-height: 3.2rem;
+}
+
+.aiT {
+    font-family: Conthrax, 'sans-serif';
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #E0FD48;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    line-height: 3.2rem;
+}
+
+.tabC {
+    font-family: Conthrax, 'sans-serif';
+    font-size: 1.7rem;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.VisionSub {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    line-height: 3rem;
+}
+
+.bold-big {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    line-height: 3rem;
+}
+
+.bold-big1 {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    line-height: 2.5rem;
+}
+
+.bold-big2 {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    line-height: 2.5rem;
+}
+
+.bgTxt {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.05rem;
+    background-color: #E0FD48;
+    color: black;
+    font-weight: 600;
+}
+
+.perC {
+    font-family: Conthrax, 'sans-serif';
+    font-size: 1.7rem;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+}
+
+.perP {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.05rem;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+.perP1 {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.05rem;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+.perBold {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.3rem;
+    /* color: #ffffff; */
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.sv2 {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1rem;
+    color: white;
+    line-height: 1.8rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.sv2-3T {
+    color: black;
+}
+
+.service-main {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 2.2rem;
+    /* color: #ffffff; */
+    margin: 0;
+    padding: 0;
+    color: white;
+    line-height: 3.5rem;
+    font-weight: 600;
+}
+
+
+.service-sub {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    color: white;
+    line-height: 2rem;
+    font-weight: 300;
+}
+
+.service-sub2 {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    color: white;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+.number {
+    font-family: Conthrax, 'sans-serif';
+    font-size: 2rem;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* .namingT{
+    background-color: #1e1e1e;
+    padding:0.5rem 1rem;
+    border-radius: 50px;
+    color: white;
+} */
+
+.namingT2 {
+    font-family: Conthrax, 'sans-serif';
+    background-color: #1e1e1e;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    color: #E0FD48;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.color {
+    font-family: Conthrax, 'sans-serif';
+    color: black;
+    font-size: 1.5rem;
+}
+
+.color0 {
+    font-family: Conthrax, 'sans-serif';
+    color: white;
+    font-size: 1.5rem;
+}
